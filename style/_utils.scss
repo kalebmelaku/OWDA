@@ -56,3 +56,11 @@ $blue-hover: rgba(10, 93, 123, 0.863);
         min-height: max-content;
     }
 }
+@media (max-width: 560px){
+    .fs-md-2{
+        font-size: 1.5rem !important;
+    }
+    .fs-md-1{
+        font-size: 1rem !important;
+    }
+}

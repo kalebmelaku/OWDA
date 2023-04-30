@@ -43,6 +43,14 @@
     min-height: max-content;
   }
 }
+@media (max-width: 560px) {
+  .fs-md-2 {
+    font-size: 1.5rem !important;
+  }
+  .fs-md-1 {
+    font-size: 1rem !important;
+  }
+}
 .banner img {
   width: 100%;
   display: block;
@@ -74,10 +82,6 @@ nav ul .nav-link:hover::before {
 
 .carousel-control-prev-icon,
 .carousel-control-next-icon {
-  padding: 2rem;
-  border-radius: 360px;
-  background: none;
-  background-color: #009245;
   display: flex;
   align-items: center;
   justify-content: center;
