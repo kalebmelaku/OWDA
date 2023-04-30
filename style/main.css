@@ -1,0 +1,163 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+  scroll-behavior: smooth;
+  scroll-padding-top: 3rem;
+}
+* ul {
+  list-style: none;
+}
+* a {
+  text-decoration: none;
+}
+
+.btn {
+  background-color: #009245;
+  color: #fff;
+  transition: all 300ms;
+}
+.btn:hover {
+  background-color: rgb(0, 87, 40);
+  color: #fff;
+}
+
+.active {
+  border-bottom: 2px solid #009245;
+}
+
+.hide-cont, .menu_btn {
+  display: none !important;
+}
+
+@media (max-width: 984px) {
+  .hide {
+    display: block !important;
+  }
+  .mob-view {
+    display: none;
+  }
+  #menu {
+    min-height: -moz-max-content;
+    min-height: max-content;
+  }
+}
+.banner img {
+  width: 100%;
+  display: block;
+}
+
+nav {
+  box-shadow: 10px 0 25px rgba(156, 156, 156, 0.3882352941);
+  border-bottom: 3px solid #009245;
+}
+nav ul .nav-link {
+  position: relative;
+  color: #2D2926;
+  font-size: 1.2rem;
+  margin-left: 0.5rem;
+}
+nav ul .nav-link::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: #009245;
+  transition: all 400ms;
+}
+nav ul .nav-link:hover::before {
+  width: 100%;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  padding: 2rem;
+  border-radius: 360px;
+  background: none;
+  background-color: #009245;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.carousel-item {
+  position: relative;
+  z-index: -1;
+}
+.carousel-item:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.2509803922);
+}
+
+.carousel-caption {
+  display: block;
+  align-items: center;
+  justify-content: center;
+}
+.carousel-caption h2 {
+  font-size: 3rem;
+}
+.carousel-caption p {
+  font-size: 2rem;
+}
+
+#about h2,
+#partners h2,
+#vacancy h2 {
+  font-size: 2.5rem;
+  background-color: #009245;
+  color: #fff;
+  padding: 0;
+}
+#about h3,
+#partners h3,
+#vacancy h3 {
+  color: #009245;
+}
+
+.flex-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 3rem;
+}
+.flex-container .card {
+  border: none;
+  border: 1px solid #009245;
+  border-top: 3px solid #009245;
+  transition: all 300ms;
+}
+.flex-container .card .card-link:last-of-type {
+  background: none;
+  color: #2D2926;
+  border: 2px solid #009245;
+  transition: all 300ms;
+}
+.flex-container .card .card-link:last-of-type:hover {
+  background-color: rgb(0, 87, 40);
+  color: #fff;
+}
+.flex-container .card:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+.about h5 {
+  font-weight: bold;
+}
+
+footer {
+  margin-top: 2rem;
+  height: 2rem;
+  width: 100%;
+  background: url("../img/top-header.png") no-repeat center center/cover;
+}/*# sourceMappingURL=main.css.map */

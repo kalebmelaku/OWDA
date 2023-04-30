@@ -1,0 +1,58 @@
+//variables
+$green: #009245;
+$orange: #E86A2F;
+$red: #D82625;
+$blue: #0A5D7C;
+$black: #2D2926;
+$light-green: #80B449;
+$light-bg: #CCE9DA;
+$light-red: #FDDFB1;
+$light-grey: #F5F5F5;
+
+$green-hover: rgb(0, 87, 40);
+$red-hover: rgba(218, 37, 37, 0.863);
+$blue-hover: rgba(10, 93, 123, 0.863);
+
+//reset
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    scroll-behavior: smooth;
+    scroll-padding-top: 3rem;
+    ul {
+        list-style: none;
+    }
+
+    a {
+        text-decoration: none;
+    }
+}
+.btn{
+    background-color: $green;
+    color: #fff;
+    transition: all 300ms;
+    &:hover{
+        background-color: $green-hover;
+        color: #fff;
+    }
+}
+.active{
+    border-bottom: 2px solid $green;
+}
+.hide-cont, .menu_btn{
+    display: none !important;
+}
+
+@media (max-width: 984px){
+    .hide{
+        display: block !important;
+    }
+    .mob-view{
+        display: none;
+    }
+    #menu{
+        min-height: max-content;
+    }
+}
