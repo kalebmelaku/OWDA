@@ -63,7 +63,6 @@ nav {
 nav ul .nav-link {
   position: relative;
   color: #2D2926;
-  font-size: 1.2rem;
   margin-left: 0.5rem;
 }
 nav ul .nav-link::before {
@@ -157,6 +156,10 @@ nav ul .nav-link:hover::before {
 
 .about h5 {
   font-weight: bold;
+}
+
+#about p {
+  font-size: clamp(1rem, 1.5vw, 1.2rem) !important;
 }
 
 footer {
