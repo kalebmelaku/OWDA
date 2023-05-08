@@ -14,13 +14,22 @@
 }
 
 .btn {
-  background-color: #009245;
-  color: #fff;
+  background-color: #009245 !important;
+  color: #fff !important;
   transition: all 300ms;
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: 2px solid #009245;
 }
 .btn:hover {
-  background-color: rgb(0, 87, 40);
-  color: #fff;
+  background-color: rgb(0, 87, 40) !important;
+  color: #fff !important;
+}
+
+a.card-link {
+  background-color: #fff !important;
+  color: #2D2926 !important;
+  border: 2px solid #009245;
 }
 
 .active {
@@ -53,10 +62,12 @@
 }
 .banner img {
   width: 100%;
+  height: 1rem;
   display: block;
 }
 
 nav {
+  background-color: #fff !important;
   box-shadow: 10px 0 25px rgba(156, 156, 156, 0.3882352941);
   border-bottom: 3px solid #009245;
 }
@@ -86,18 +97,38 @@ nav ul .nav-link:hover::before {
   justify-content: center;
 }
 
-.carousel-item {
-  position: relative;
-  z-index: -1;
+.mySwiper img {
+  width: 100%;
 }
-.carousel-item:before {
+
+.slide-container {
+  position: relative;
+}
+.slide-container:before {
   content: "";
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.2509803922);
+  background-color: rgba(0, 0, 0, 0.3843137255);
+  z-index: 2;
+}
+.slide-container .text {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 100;
+}
+
+.mySwiper {
+  max-height: 50vh;
+  height: auto;
+}
+
+.swiper-slide {
+  width: 100% !important;
 }
 
 .carousel-caption {
@@ -115,7 +146,7 @@ nav ul .nav-link:hover::before {
 #about h2,
 #partners h2,
 #vacancy h2 {
-  font-size: 2.5rem;
+  font-size: clamp(1.5rem, 1.5vw, 2rem);
   background-color: #009245;
   color: #fff;
   padding: 0;
@@ -123,7 +154,17 @@ nav ul .nav-link:hover::before {
 #about h3,
 #partners h3,
 #vacancy h3 {
+  font-size: clamp(1.5rem, 1.5vw, 2rem);
   color: #009245;
+}
+
+#vacancy h3 {
+  font-size: clamp(1rem, 1.5vw, 1.5rem);
+  color: unset;
+}
+#vacancy p.sub-title {
+  color: gray;
+  font-size: 0.8rem;
 }
 
 .flex-container {
@@ -131,37 +172,70 @@ nav ul .nav-link:hover::before {
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
-  gap: 3rem;
+  gap: 2rem;
+  width: 100% !important;
 }
-.flex-container .card {
+.flex-container .card-custom {
+  width: 18rem;
   border: none;
   border: 1px solid #009245;
   border-top: 3px solid #009245;
   transition: all 300ms;
+  padding-bottom: 1rem;
 }
-.flex-container .card .card-link:last-of-type {
-  background: none;
-  color: #2D2926;
-  border: 2px solid #009245;
-  transition: all 300ms;
-}
-.flex-container .card .card-link:last-of-type:hover {
-  background-color: rgb(0, 87, 40);
-  color: #fff;
-}
-.flex-container .card:hover {
+.flex-container .card-custom:hover {
   cursor: pointer;
-  transform: scale(1.1);
+  transform: scale(1.05);
 }
 
 .about h5 {
   font-weight: bold;
 }
 
-#about p {
-  font-size: clamp(1rem, 1.5vw, 1.2rem) !important;
+.job-list h2 {
+  font-size: clamp(1.5rem, 1.5vw, 1.7rem);
 }
 
-footer {
+#menu h3 {
+  font-size: clamp(1rem, 1.5vw, 1.3rem);
+}
+#menu li {
+  padding: 0 !important;
+}
+#menu a {
+  color: #009245;
+}
+#menu a h3 {
+  margin: 0;
+}
+
+#about p,
+.card-text {
+  font-size: clamp(1rem, 1.5vw, 1.1rem) !important;
+}
+
+.card-subtitle {
+  font-size: 0.8rem !important;
+}
+
+.custom-container {
+  max-width: 800px;
+}
+
+input::-moz-placeholder {
+  font-size: clamp(0.8rem, 1.5vw, 1rem);
+}
+
+label, input::placeholder {
+  font-size: clamp(0.8rem, 1.5vw, 1rem);
+}
+
+.footer {
   margin-top: 2rem;
+  background: url("../assets/top-header.png") no-repeat center center/cover;
+  padding: 0.5rem 0;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
 }/*# sourceMappingURL=main.css.map */

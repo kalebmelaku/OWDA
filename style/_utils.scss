@@ -30,13 +30,21 @@ $blue-hover: rgba(10, 93, 123, 0.863);
     }
 }
 .btn{
-    background-color: $green;
-    color: #fff;
+    background-color: $green !important;
+    color: #fff !important;
     transition: all 300ms;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: 2px solid $green;
     &:hover{
-        background-color: $green-hover;
-        color: #fff;
+        background-color: $green-hover !important;
+        color: #fff !important;
     }
+}
+a.card-link{
+    background-color: #fff !important;
+    color: $black !important;
+    border: 2px solid $green;
 }
 .active{
     border-bottom: 2px solid $green;
