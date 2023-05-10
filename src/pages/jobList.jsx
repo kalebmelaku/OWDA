@@ -11,14 +11,14 @@ function JobList() {
         <div className="container mx-auto max-w-screen-xl p-4">
           <h2 className="text-center py-2 my-5 fw-bold">Current Openings</h2>
           <div className="flex-container">
-            <Box />
-            <Box />
-            <Box />
-            <Box />
-            <Box />
-            <Box />
-            <Box />
-            <Box />
+            <Box title={'Job Title 1'} />
+            <Box title={'Job Title 2'} />
+            <Box title={'Job Title 3'} />
+            <Box title={'Job Title 4'} />
+            <Box title={'Job Title 5'} />
+            <Box title={'Job Title 6'} />
+            <Box title={'Job Title 7'} />
+            <Box title={'Job Title 8'} />
           </div>
         </div>
       </section>
